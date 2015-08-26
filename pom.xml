@@ -15,7 +15,7 @@
     <name>Spring Boot Druid Sample</name>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>1.7</java.version>
     </properties>
 
     <dependencies>
@@ -25,17 +25,21 @@
             <version>1.0.15</version>
         </dependency>
         <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.mariadb.jdbc</groupId>
             <artifactId>mariadb-java-client</artifactId>
             <scope>runtime</scope>
             <exclusions>
                 <exclusion>
-                    <groupId>commons-dbcp</groupId>
                     <artifactId>commons-dbcp</artifactId>
+                    <groupId>commons-dbcp</groupId>
                 </exclusion>
                 <exclusion>
-                    <groupId>net.java.dev.jna</groupId>
                     <artifactId>jna</artifactId>
+                    <groupId>net.java.dev.jna</groupId>
                 </exclusion>
             </exclusions>
         </dependency>
