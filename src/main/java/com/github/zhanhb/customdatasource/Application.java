@@ -25,12 +25,12 @@ import org.springframework.boot.context.embedded.EmbeddedWebApplicationContext;
 import org.springframework.context.ApplicationContext;
 
 /**
- * Boot class for both web application and spring-boot application.
+ * Boot class for spring-boot application.
  *
  * @author zhanhb
  */
 @SpringBootApplication
-public class Application  {
+public class Application {
 
     private static final Logger log = LoggerFactory.getLogger(Application.class);
 

@@ -11,10 +11,16 @@
     <artifactId>druid-sample</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-
     <name>Spring Boot Druid Sample</name>
+    <url>https://github.com/zhanhb/spring-boot-druid-sample/</url>
+    <inceptionYear>2015</inceptionYear>
+    <organization>
+        <name>zhanhb</name>
+        <url>http://github.com/zhanhb</url>
+    </organization>
 
     <properties>
+        <hibernate.version>4.3.11.Final</hibernate.version>
         <java.version>1.7</java.version>
     </properties>
 

@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Pivotal Software, Inc..
+ * Copyright 2015 zhanhb.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,10 +19,11 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
 
 /**
+ * Boot class for web application.
  *
  * @author zhanhb
  */
-public class ApplicationWebXml extends SpringBootServletInitializer{
+public class ApplicationWebXml extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {

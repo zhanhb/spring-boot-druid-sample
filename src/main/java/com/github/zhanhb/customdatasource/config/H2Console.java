@@ -19,13 +19,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.embedded.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author zhanhb
  */
-@Controller
+@Component
 public class H2Console {
 
     private static final Logger log = LoggerFactory.getLogger(H2Console.class);

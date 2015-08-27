@@ -16,7 +16,7 @@
 package com.github.zhanhb.customdatasource.repository;
 
 import com.github.zhanhb.customdatasource.Application;
-import com.github.zhanhb.customdatasource.domain.Tag;
+import com.github.zhanhb.customdatasource.domain.Note;
 import java.util.List;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
@@ -26,21 +26,21 @@ import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
- * Integration tests for {@link JpaTagRepository}.
+ * Integration tests for {@link NoteRepository}.
  *
  * @author Andy Wilkinson
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(Application.class)
-public class JpaTagRepositoryIntegrationTest {
+public class NoteRepositoryIntegrationTest {
 
     @Autowired
-    private TagRepository repository;
+    private NoteRepository repository;
 
     @Test
-    public void findsAllTags() {
-        List<Tag> tags = this.repository.findAll();
-        assertEquals(3, tags.size());
+    public void findsAllNotes() {
+        List<Note> notes = this.repository.findAll();
+        assertEquals(4, notes.size());
     }
 
 }
