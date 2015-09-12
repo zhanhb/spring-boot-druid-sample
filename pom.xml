@@ -22,6 +22,7 @@
     <properties>
         <hibernate.version>4.3.11.Final</hibernate.version>
         <java.version>1.7</java.version>
+        <mariadb.version>1.2.2</mariadb.version>
     </properties>
 
     <dependencies>
@@ -29,10 +30,6 @@
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>1.0.15</version>
-        </dependency>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
         </dependency>
         <dependency>
             <groupId>org.mariadb.jdbc</groupId>
