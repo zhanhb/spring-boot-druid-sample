@@ -4,7 +4,7 @@
     <parent>
         <artifactId>platform-bom</artifactId>
         <groupId>io.spring.platform</groupId>
-        <version>2.0.0.BUILD-SNAPSHOT</version>
+        <version>2.0.5.RELEASE</version>
         <relativePath />
     </parent>
     <groupId>com.github.zhanhb</groupId>
@@ -20,9 +20,8 @@
     </organization>
 
     <properties>
-        <hibernate.version>4.3.11.Final</hibernate.version>
         <java.version>1.7</java.version>
-        <mariadb.version>1.2.2</mariadb.version>
+        <mariadb.version>1.4.6</mariadb.version>
     </properties>
 
     <dependencies>
@@ -66,43 +65,6 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
-    <repositories>
-        <repository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>http://repo.spring.io/milestone</url>
-        </repository>
-        <repository>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <id>spring-snapshots</id>
-            <name>Spring Snapshots</name>
-            <url>http://repo.spring.io/snapshot</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>http://repo.spring.io/milestone</url>
-        </pluginRepository>
-        <pluginRepository>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <id>spring-snapshots</id>
-            <name>Spring Snapshots</name>
-            <url>http://repo.spring.io/snapshot</url>
-        </pluginRepository>
-    </pluginRepositories>
 
     <build>
         <plugins>

@@ -17,11 +17,15 @@ package com.github.zhanhb.customdatasource;
 
 import java.io.IOException;
 import java.util.Locale;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.embedded.EmbeddedWebApplicationContext;
+import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.context.ApplicationContext;
 
 /**
@@ -30,7 +34,7 @@ import org.springframework.context.ApplicationContext;
  * @author zhanhb
  */
 @SpringBootApplication
-public class Application {
+public class Application extends SpringBootServletInitializer {
 
     private static final Logger log = LoggerFactory.getLogger(Application.class);
 
@@ -44,6 +48,14 @@ public class Application {
             log.info("Access URLs:\n{}\n\tLocal: \t\t{}\n{}", dashes, url, dashes);
         }
 
+    }
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.bannerMode(Banner.Mode.OFF)
+                .addCommandLineProperties(false)
+                .logStartupInfo(true)
+                .sources(Application.class);
     }
 
 }

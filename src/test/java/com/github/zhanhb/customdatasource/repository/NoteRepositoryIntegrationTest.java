@@ -15,15 +15,18 @@
  */
 package com.github.zhanhb.customdatasource.repository;
 
-import com.github.zhanhb.customdatasource.Application;
-import com.github.zhanhb.customdatasource.domain.Note;
-import java.util.List;
 import static org.junit.Assert.assertEquals;
+
+import java.util.List;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.github.zhanhb.customdatasource.Application;
+import com.github.zhanhb.customdatasource.domain.Note;
 
 /**
  * Integration tests for {@link NoteRepository}.

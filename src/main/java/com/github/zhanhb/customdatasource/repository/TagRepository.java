@@ -15,9 +15,11 @@
  */
 package com.github.zhanhb.customdatasource.repository;
 
-import com.github.zhanhb.customdatasource.domain.Tag;
 import java.util.List;
+
 import org.springframework.data.repository.Repository;
+
+import com.github.zhanhb.customdatasource.domain.Tag;
 
 public interface TagRepository extends Repository<Tag, Long> {
 
